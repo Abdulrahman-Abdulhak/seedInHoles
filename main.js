@@ -1,7 +1,8 @@
+import "./main.css";
+import { init } from "./drawer/init";
+
 document.querySelector("#app").innerHTML = `
-  <div>
-    working
-  </div>
+  <canvas id="main-drawer" />
 `;
 
-setupCounter(document.querySelector("#counter"));
+init(document.querySelector("#main-drawer"));
